@@ -2,7 +2,33 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Timer</title>
+    <style>
+    /* 1번 전체 화면 설정*/
+        body {
+            margin: 0; /* 기본 여백 제거*/
+            height: 100vh; /* 화면 전체 높이 사용 */
+            /*flexbox 로 중앙 정렬*/
+            display: flex;
+            justify-content: center; /*가로 중앙*/
+            align-items: center;/*세로 중앙*/
+            /* 배경 그라데이션 (포트폴리오 느낌) */
+            background: linear-gradient(135deg, #667eea, #764ba2);
+             /* 기본 폰트 */
+             font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    /*2번 카드 컨테이너 */
+        .container{
+            background: white; /*카드 배경*/
+            padding: 40px, 60px; /*내부 여백 */
+            border-radius: 30px; /*모서리 둥글게*/
+             /* 카드 떠 있는 그림자 효과 */
+            box-shadow: 0 20px, 40px, rgba(0,0,0,0, 2);
+            text-align: center; /*내부 요소 가운데 */
+        }
+
+    </style>
 </head>
 <body>
     <h1 id="display">00:00:00</h1>
@@ -14,3 +40,4 @@
     <script src="timer.js"></script>
 </body>
 </html>
+
